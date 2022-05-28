@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Login</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-wrapper red accent-4">
+        <a href="https://www.telecall.com/" class="brand-logo"><img src="img/logo.png" width="150px" height="50px"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="mobile.html"><a class="waves-effect waves-light btn transparent">Entrar</a></a></li>
+          <li><a href="mobile.html"><a class="waves-effect waves-light btn blue-grey">Criar Conta</a></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="mobile.html"><a class="waves-effect waves-light btn red accent-4">Entrar</a></a></li>
+      <li><a href="mobile.html"><a class="waves-effect waves-light btn blue-grey">Criar Conta</a></a></li>
+    </ul>
+
+    <div class="limiter">
+      <div class="container-login" style="background-image: url('img/city.jpg');">
+        <div class="container">
+          <div class="bloco row center">
+            <div class="card-tabs">
+              <ul class="tabs tabs-fixed-width">
+                <li class="tab" onclick="habilitaUser()"><a href="#test4"><i class="tiny material-icons">lock</i>Usuário</a></li>
+                <li class="tab" onclick="habilitaUserM()"><a class="active" href="#test5"><i class="tiny material-icons">person</i>Usuário Master</a></li>
+              </ul>
+            </div>
+            <div class="card-content">
+              <img src="img/logo2.png" width="100px" height="100px"></a>
+              <h1 class="header center white-text text-lighten-2">Login</h1>
+              <div id="test4">
+                <div class="row">
+                  <form class="col s12" action="#" method="post" name="frm">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input id="email" type="email" class="validate">
+                        <label for="email"><i class="tiny material-icons">person</i>Email</label>
+                      </div>
+                      <div class="input-field col s12">
+                        <input id="password" type="password" class="validate">
+                        <label for="password"><i class="tiny material-icons">https</i>Password</label>
+                        <a class="right btn-flat disabled"><i class="tiny material-icons">visibility</i></a>
+                      </div>
+                      <div class="input-field col s12">
+                        <label>
+                          <input type="checkbox" class="filled-in" />
+                          <span>Lembre-me</span>
+                        </label>
+                      </div>
+                      <div class="input-field col s12">
+                        <button class="btn red accent-4 waves-effect waves-light" type="submit" name="action">Login</button>
+                      </div>
+                      <div class="input-field col s12">
+                        <a href="#">Esqueceu sua senha?</a>
+                      </div>
+                      <div class="input-field col s12">
+                        <a href="#">Crie uma conta!</a>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>      
+          </div>
+        </div>
+      </div>   
+    </div>
+
+    <footer class="page-footer black">
+      <div class="footer-copyright">
+        <div class="container">
+          Made by <a class="brown-text text-lighten-3" href="#">Beatriz Siqueira Marques da Silva</a>
+        </div>
+        <div>
+          <a href="https://web.facebook.com/TelecallBr?_rdc=1&_rdr"><img src="img/face.png" width="20px" height="20px"></a>
+          <a href="https://www.instagram.com/telecallbr/"><img src="img/insta.png" width="20px" height="20px"></a>
+          <a href="https://www.linkedin.com/company/telecall/"><img src="img/in.png" width="20px" height="20px"></a>
+          <a href="https://api.whatsapp.com/send/?phone=5521936180100&text&app_absent=0"><img src="img/wtp.jpeg" width="50px" height="50px"></a>
+        </div>
+      </div>
+    </footer>
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+  </body>
+</html>
